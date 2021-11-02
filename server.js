@@ -29,7 +29,7 @@ app.get('/TeamMembers', function (req, res) {
 //   }
 // })
 app.post('/Team', function (req, res) {
-  
+
   data.push(req.body)
     console.log(data)
   XLSX.utils.sheet_add_json(workbook.Sheets["Sheet1"],data)
@@ -51,4 +51,6 @@ app.post('/Team', function (req, res) {
 //    }
   
 // }) 
-app.listen(3000)
+
+app.listen(process.env.PORT || 3000, 
+	() => console.log("Server is running..."));
