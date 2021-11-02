@@ -78,7 +78,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("http://localhost:3000/Team", requestOptions)
+fetch("https://hidden-chamber-64541.herokuapp.com/Team", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
