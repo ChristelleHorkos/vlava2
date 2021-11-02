@@ -6,7 +6,7 @@ const { write } = require('xlsx')
 app.use(bodyParser.json())
 app.use(cors())
 
-app.use(express.static("public"))
+
 
 
 // Read xlsx file
